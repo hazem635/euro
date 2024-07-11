@@ -9,7 +9,7 @@ st.set_page_config(page_title="EURO 2024", layout="wide")
 st.title("EURO 2024")
 
 # Load the dataset
-path = r"C:\Users\hazem\Euro_2024_Team_Stats_Reduced.csv"
+path = r"Euro_2024_Team_Stats_Reduced.csv"
 euro = pd.read_csv(path)
 
 # Display a subheader
