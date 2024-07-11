@@ -31,7 +31,7 @@ blue_color_scale = [
     [0.0, 'rgb(0, 0, 255)'],   # blue
     [0.5, 'rgb(0, 128, 255)'], # lighter blue
     [1.0, 'rgb(173, 216, 230)'] # light blue (avoid white)
-    
+]
 # Create the choropleth map
 fig = px.choropleth(data_frame=aggregated_data,
                     locations='team',
