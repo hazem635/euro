@@ -33,8 +33,7 @@ fig = px.choropleth(data_frame=aggregated_data,
                     scope="europe",
                     color="goals_scored",
                     hover_name="team",
-                    hover_data=["goals_scored", "Shots on target"],
-                   color_continuous_scale=px.colors.sequential.Blues)
+                    hover_data=["goals_scored", "Shots on target"])
 
 fig.update_layout(coloraxis_colorbar={'title': 'Goals by team'},
                   margin={"r":0,"t":0,"l":0,"b":0},  # Remove margins
