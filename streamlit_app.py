@@ -30,8 +30,7 @@ aggregated_data = filtered_data.groupby('team').sum().reset_index()
 blue_color_scale = [
     [1.0, 'rgb(173, 216, 230)'],
     [0.5, 'rgb(0, 128, 255)'],
-    [0.0, 'rgb(0, 0, 255)']
-]
+    [0.0, 'rgb(0, 0, 255)']]
 # Create the choropleth map
 fig = px.choropleth(data_frame=aggregated_data,
                     locations='team',
