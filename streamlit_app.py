@@ -53,7 +53,7 @@ st.plotly_chart(fig, use_container_width=True)
 st.subheader(" Data")
 st.dataframe(aggregated_data)
 
-st.subheader("Percentage of Shots on Target to Total Shots for Each Team")
+st.subheader("Percentage of Shots on Target and missed shots to Total Shots")
 
 for team in selected_teams:
     team_data = aggregated_data[aggregated_data['team'] == team]
@@ -75,7 +75,7 @@ for team in selected_teams:
         
 # Correlation heatmap
 st.subheader("Correlation Heatmap")
-corr_columns = ['goals_scored', 'Total shots', 'Accurate passes', 'Keeper saves']
+corr_columns = ['goals_scored', 'Total shots', 'Shots on Target','Accurate passes', 'Keeper saves']
 corr_data = aggregated_data[corr_columns].corr()
 
 plt.figure(figsize=(10, 6))
