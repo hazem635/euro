@@ -75,7 +75,7 @@ for team in selected_teams:
         
 # Correlation heatmap
 st.subheader("Correlation Heatmap")
-corr_columns = ['goals_scored', 'Total shots','Shots on target','Accurate passes', 'Keeper saves']
+corr_columns = ['goals_scored', 'Total shots','Accurate passes', 'Keeper saves']
 corr_data = aggregated_data[corr_columns].corr()
 
 plt.figure(figsize=(10, 6))
